@@ -8,6 +8,7 @@ import ContactInfoBox from "./components/ContactInfoBox";
 import ScheduleAppointmentBox from "./components/ScheduleAppointmentBox";
 import ExpertsContactBox from "./components/ExpertsContactBox";
 import RelatedBlogCard from "./components/RelatedBlogCard";
+import CategorySelectionForm from "./components/CategorySelectionForm";
 
 import Link from "next/link";
 
@@ -476,6 +477,8 @@ export default function Home() {
 
 
             <AppointmentForm />
+
+            <CategorySelectionForm />
 
 
           </div>

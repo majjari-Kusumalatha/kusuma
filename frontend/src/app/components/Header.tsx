@@ -95,7 +95,7 @@ export default function Header() {
 
                 <span
                   className={`transition-transform ${
-                    activeDropdown === dropdown.name ? "rotate-90" : ""
+                    activeDropdown === dropdown.name ? "rotate-0" : ""
                   }`}
                 >
                   ⌄
