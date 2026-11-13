@@ -12,32 +12,6 @@ import RelatedBlogCard from "./components/RelatedBlogCard";
 import Link from "next/link";
 
 
-// Reusable Input Component
-type FormInputProps = {
-  name: string;
-  placeholder: string;
-  type?: string;
-  required?: boolean;
-};
-
-function FormInput({
-  name,
-  placeholder,
-  type = "text",
-  required = false,
-}: FormInputProps) {
-  return (
-    <input
-      type={type}
-      name={name}
-      placeholder={placeholder}
-      required={required}
-      className="w-full rounded-md border border-gray-300 bg-white px-3 py-3 text-sm text-gray-900 outline-none focus:border-orange-400"
-    />
-  );
-}
-
-
 export default function Home() {
 
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
