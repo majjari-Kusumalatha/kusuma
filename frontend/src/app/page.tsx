@@ -4,6 +4,10 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AppointmentForm from "./components/AppointmentForm";
+import ContactInfoBox from "./components/ContactInfoBox";
+import ScheduleAppointmentBox from "./components/ScheduleAppointmentBox";
+import ExpertsContactBox from "./components/ExpertsContactBox";
+
 import Link from "next/link";
 
 
@@ -29,52 +33,6 @@ function FormInput({
       required={required}
       className="w-full rounded-md border border-gray-300 bg-white px-3 py-3 text-sm text-gray-900 outline-none focus:border-orange-400"
     />
-  );
-}
-
-// Reusable Select Component
-type FormSelectProps = {
-  name: string;
-  placeholder: string;
-  options: string[];
-  required?: boolean;
-};
-
-function FormSelect({
-  name,
-  placeholder,
-  options,
-  required = false,
-}: FormSelectProps) {
-  return (
-    <select
-      name={name}
-      defaultValue=""
-      required={required}
-      className="w-full rounded-md border border-gray-300 bg-white px-3 py-3 text-sm text-gray-700 outline-none focus:border-orange-400"
-    >
-      <option value="" disabled>
-        {placeholder}
-      </option>
-
-      {options.map((option) => (
-        <option key={option} value={option}>
-          {option}
-        </option>
-      ))}
-    </select>
-  );
-}
-
-// Reusable Submit Button
-function FormSubmitButton() {
-  return (
-    <button
-      type="submit"
-      className="w-full rounded-md bg-[#F58220] px-4 py-3 text-sm font-semibold text-black transition hover:bg-[#E87512]"
-    >
-      Schedule Appointment
-    </button>
   );
 }
 
@@ -304,38 +262,7 @@ export default function Home() {
                   coordination needs targeted practice and therapeutic guidance.
                 </p>
 
-                <div
-                  className="mb-4 rounded-xl px-8 py-8 text-center text-white shadow-md"
-                  style={{
-                    background: "linear-gradient(135deg, #062847 0%, #0b4a8a 100%)"
-                  }}
-                >
-
-                  <h2 className="mb-5 text-3xl font-bold text-white">
-                    Not sure where to start?
-                  </h2>
-
-                  <p className="mb-8 text-base leading-7 text-white text-[18px]">
-                    Talk to a patient care advisor — free, confidential, 24/7. We'll match you to the right specialist and book your appointment in minutes.
-                  </p>
-
-                  <div className="flex flex-wrap items-center justify-center gap-3 text-base text-xl m-3 text-white">
-
-                    <span className="rounded-md border border-orange-400 bg-orange-400 px-8 py-2">
-                      Call +91-40-6833-4455
-                    </span>
-
-                    <span className="rounded-md border border-blue-500 bg-blue-500 px-8 py-2">
-                      Book Online
-                    </span>
-
-                    <span className="rounded-md border border-green-500 bg-green-500 px-8 py-2">
-                      Whatsapp Us
-                    </span>
-
-                  </div>
-
-                </div>
+              <ContactInfoBox/>
 
                 <h2 className="mt-4 text-xl font-semibold text-gray-900">
                   Key Signs of Development Delay in Children
@@ -414,25 +341,7 @@ export default function Home() {
                     Around ages 2 to 3: Avoidance of parallel play alongside peers, severe difficulty coping with minor daily routine shifts, or frequent explosive meltdowns that feel unmanageable compared to typical toddler tantrums.</li>
                 </ul>
 
-                <div
-                  className="mb-4 rounded-xl px-8 py-8 text-center text-white shadow-md"
-                  style={{
-                    background: "linear-gradient(135deg, #062847 0%, #0b4a8a 100%)"
-                  }}
-                >
-
-                  <p className="mb-8 text-base leading-7 text-white text-[20px]">
-                    Your health is everything - prioritize your well-being today.</p>
-
-                  <div className="flex flex-wrap items-center justify-center gap-3 text-base text-xl m-3 text-white">
-
-                    <span className="rounded-md border border-orange-400 bg-orange-400 px-8 py-2">
-
-                      Schedule Your Appointment</span>
-
-                  </div>
-
-                </div>
+               <ScheduleAppointmentBox/>
 
                 <h2 className="mt-4 text-xl font-semibold text-gray-900">
                   What To Do If You FeelSomething Is Not Right? Development Assessment For Children in Whitefield
@@ -738,12 +647,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="my-10">
-          <div className="bg-blue-900 border rounded-lg p-6 text-center text-xl text-white">
-            <p>Still have questions? Speak with our experts now!</p>
-            <button className="mt-6 bg-white border rounded-lg text-gray-700 py-2 px-4">040-68334455</button>
-          </div>
-        </section>
+      <ExpertsContactBox/>
       </section>
 
       <Footer />
