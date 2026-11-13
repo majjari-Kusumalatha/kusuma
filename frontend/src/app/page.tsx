@@ -7,6 +7,7 @@ import AppointmentForm from "./components/AppointmentForm";
 import ContactInfoBox from "./components/ContactInfoBox";
 import ScheduleAppointmentBox from "./components/ScheduleAppointmentBox";
 import ExpertsContactBox from "./components/ExpertsContactBox";
+import RelatedBlogCard from "./components/RelatedBlogCard";
 
 import Link from "next/link";
 
@@ -262,7 +263,7 @@ export default function Home() {
                   coordination needs targeted practice and therapeutic guidance.
                 </p>
 
-              <ContactInfoBox/>
+                <ContactInfoBox />
 
                 <h2 className="mt-4 text-xl font-semibold text-gray-900">
                   Key Signs of Development Delay in Children
@@ -341,7 +342,7 @@ export default function Home() {
                     Around ages 2 to 3: Avoidance of parallel play alongside peers, severe difficulty coping with minor daily routine shifts, or frequent explosive meltdowns that feel unmanageable compared to typical toddler tantrums.</li>
                 </ul>
 
-               <ScheduleAppointmentBox/>
+                <ScheduleAppointmentBox />
 
                 <h2 className="mt-4 text-xl font-semibold text-gray-900">
                   What To Do If You FeelSomething Is Not Right? Development Assessment For Children in Whitefield
@@ -500,154 +501,58 @@ export default function Home() {
             </div>
 
 
-           <AppointmentForm/>
+            <AppointmentForm />
 
 
           </div>
 
         </div>
 
+
         <section className="my-8 w-full">
+
           <h2 className="mb-6 mt-4 text-center text-2xl font-bold text-gray-700">
             Related Blogs
           </h2>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
 
-            {/* Blog 1 */}
-            <div className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
-              <div className="p-4">
-
-                <h3 className="mb-2 mt-3 text-m text-gray-700">
-                  Developmental Delays in Children : Parents Should Know</h3>
-
-                <div className="mb-3 mt-4 flex items-center gap-2 text-sm">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.8}
-                  >
-                    <rect x="3" y="5" width="18" height="16" rx="2" />
-                    <path strokeLinecap="round" d="M16 3v4M8 3v4M3 10h18" />
-                  </svg>
-                  <span>2026-10-09</span>
-
-
-                  <Link
-                    href="/articles/developmental-milestones-in-children"
-                    className="ml-14 text-white bg-blue-900 p-2 rounded-lg hover:orange-500"
-                  >
-                    Read More →
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Blog 2 */}
-            <div className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
-              <div className="p-4">
-
-                <h3 className="mb-2 mt-3 text-m text-gray-700">
-                  Newborn Jaundice : Normal Signs & When to Seek Medical Help
-                </h3>
-
-                <div className="mb-3 mt-4 flex items-center gap-2 text-sm">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.8}
-                  >
-                    <rect x="3" y="5" width="18" height="16" rx="2" />
-                    <path strokeLinecap="round" d="M16 3v4M8 3v4M3 10h18" />
-                  </svg>
-                  <span>2026-10-09</span>
-
-
-                  <Link
-                    href="/articles/developmental-milestones-in-children"
-                    className="ml-14 text-white bg-blue-900 p-2 rounded-lg hover:orange-500"
-                  >
-                    Read More →
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Blog 3 */}
-            <div className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
-              <div className="p-4">
-
-                <h3 className="mb-2 mt-3 text-m text-gray-700">
-                  Pediatric Cardiac Arrest Cause Prevention
-                </h3>
-
-                <div className="mb-3 mt-4 flex items-center gap-2 text-sm">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.8}
-                  >
-                    <rect x="3" y="5" width="18" height="16" rx="2" />
-                    <path strokeLinecap="round" d="M16 3v4M8 3v4M3 10h18" />
-                  </svg>
-                  <span>2026-10-09</span>
-
-
-                  <Link
-                    href="/articles/developmental-milestones-in-children"
-                    className="ml-14 text-white bg-blue-900 p-2 rounded-lg hover:orange-500"
-                  >
-                    Read More →
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Blog 4 */}
-            <div className="overflow-hidden rounded-xl bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
-              <div className="p-4">
-
-                <h3 className="mb-2 mt-3 text-m text-gray-700">
-                  Pediacttric Dermatology Care in Hitech City | Child Skin Health</h3>
-
-                <div className="mb-3 mt-4 flex items-center gap-2 text-sm">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.8}
-                  >
-                    <rect x="3" y="5" width="18" height="16" rx="2" />
-                    <path strokeLinecap="round" d="M16 3v4M8 3v4M3 10h18" />
-                  </svg>
-                  <span>2026-10-09</span>
-
-
-                  <Link
-                    href="/articles/developmental-milestones-in-children"
-                    className="ml-14 text-white bg-blue-900 p-2 rounded-lg hover:orange-500"
-                  >
-                    Read More →
-                  </Link>
-                </div>
-              </div>
-            </div>
+            {[
+              {
+                title: "Developmental Delays in Children : Parents Should Know",
+                date: "2026-10-09",
+                href: "/articles/developmental-milestones-in-children",
+              },
+              {
+                title: "Newborn Jaundice : Normal Signs & When to Seek Medical Help",
+                date: "2026-10-09",
+                href: "/articles/developmental-milestones-in-children",
+              },
+              {
+                title: "Pediatric Cardiac Arrest Cause Prevention",
+                date: "2026-10-09",
+                href: "/articles/developmental-milestones-in-children",
+              },
+              {
+                title: "Pediacttric Dermatology Care in Hitech City | Child Skin Health",
+                date: "2026-10-09",
+                href: "/articles/developmental-milestones-in-children",
+              },
+            ].map((blog, index) => (
+              <RelatedBlogCard
+                key={index}
+                title={blog.title}
+                date={blog.date}
+                href={blog.href}
+              />
+            ))}
 
           </div>
+
         </section>
 
-      <ExpertsContactBox/>
+
+        <ExpertsContactBox />
       </section>
 
       <Footer />
